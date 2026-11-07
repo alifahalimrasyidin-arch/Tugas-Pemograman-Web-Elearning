@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlifaHalimRasyidin - Tugas Web</title>
+    <style>
+        body {
+            background-color: #87ceeb;
+            color: #000000;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff0000;
+            text-align: center;
+            border-bottom: 4px dashed #0000ff;
+            padding-bottom: 10px;
+        }
+        .nim-box {
+            background-color: #0000ff;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;
+            margin-bottom: 20px;
+
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        button {
+            background-color: #ff0000;
+            color: #ffffff;
+            font-family: "Comic Sans MS", cursive;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 5px outset #0000ff;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:active {
+            border: 5px inset #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>AlifaHalimRasyidin</h1>
+    <div class="nim-box">
+        <marquee scrollamount="6">NIM 24552011300 - Tugas JavaScript</marquee>
+    </div>
+    <p>klik tombol dibawah untuk melihat waktu anda</p>
+    
+
+    <p id="paragraf-waktu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p id="paragraf-teks">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button onclick="jalankanAksi()">Klik disini</button>
+    <script>
+        function jalankanAksi() {
+            alert("Anda mengklik tombol,skrg waktu anda akan terlihat!");  
+            const waktu = new Date().toLocaleString("id-ID");
+            document.getElementById("paragraf-waktu").innerHTML = "<strong> jam sekarang:</strong> " + waktu;            
+            document.getElementById("paragraf-teks").innerHTML = "Itu adalah waktu anda saat menekan tombollll";
+        }
+    </script>
+
+</body>
+</html>
